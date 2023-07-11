@@ -1,0 +1,28 @@
+.Image-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    
+  }
+  
+  .Image-list:empty::before {
+    content: "No images to display.";
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+    color: red;
+  }
+  .Image-list img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    outline: 3px solid black;
+    
+  }
+  
+  @media screen and (max-width: 600px) {
+    .Image-list {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+  
