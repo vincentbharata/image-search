@@ -1,2 +1,2 @@
 # picture-search
-a website for searching picture with unsplash API
+a website for searching and image with unsplash API
